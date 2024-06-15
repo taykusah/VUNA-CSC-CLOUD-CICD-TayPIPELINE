@@ -20,11 +20,9 @@
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
                 
-                <label for="Matriculation Number">Matriculation number:</label>
-                <input type="Matriculation number" id="Matriculation number" name="matriculation number" required>
+                <label for="matriculationNumber">Matriculation Number:</label>
+                <input type="text" id="matriculationNumber" name="matriculationNumber" required>
 
-
-                
                 <label for="amount">Amount:</label>
                 <input type="number" id="amount" name="amount" required>
                 
@@ -36,6 +34,13 @@
     <footer>
         <p>&copy; 2024/2025 NACOS</p>
     </footer>
-    
+    <script>
+        document.getElementById('paymentForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // Here you can add your form validation or AJAX request to process the payment.
+            // On successful payment processing, redirect to the congratulations page.
+            window.location.href = 'congratulations.html';
+        });
+    </script>
 </body>
 </html>
